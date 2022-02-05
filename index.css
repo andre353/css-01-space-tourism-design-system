@@ -1,4 +1,14 @@
 /* ------------------------ */
+/* Custom Properties        */
+/* ------------------------ */
+
+:root {
+    --clr-dark: 230 35% 7%;
+    --clr-light: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+}
+
+/* ------------------------ */
 /* Reset                    */
 /* ------------------------ */
 
@@ -88,4 +98,28 @@ select {
     clip: rect(0,0,0,0);
     white-space: nowrap;
     border: 0;
+}
+
+/* Colors */
+
+.bg-dark {
+    background-color: hsl( var(--clr-dark) );
+}
+.bg-light {
+    background-color: hsl( var(--clr-light) );
+}
+.bg-white {
+    background-color: hsl( var(--clr-white) );
+}
+.bg-example {
+    background-color: hsl( var(--clr-light) / .2 ); /* 20% of alpha (=231*0.2)*/
+}
+.text-dark {
+    color: hsl( var(--clr-dark) );
+}
+.text-light {
+    color: hsl( var(--clr-light) );
+}
+.text-white {
+    color: hsl( var(--clr-white) );
 }
