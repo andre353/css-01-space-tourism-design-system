@@ -1,0 +1,57 @@
+/* ------------------------ */
+/* Reset                    */
+/* ------------------------ */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+/* Set Up The Body */
+body {
+    line-height: 1.5; 
+    min-height: 100vh;
+}
+
+/* Make Images Easier to Work With */
+img, picture {
+    min-width: 100%;
+    display: block;
+}
+
+/* Make Form Elements (which do not inherit font by default) Easier to Work With */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Accessibility - remove animations for people who've turned them off in the browser or OS bcs of dizziness*/
+@media (prefers-reduced-motion: reduce) {  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
